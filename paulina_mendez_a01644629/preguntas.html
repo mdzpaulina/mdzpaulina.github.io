@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="preguntas.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+        <title>HTML + CSS</title>
+    </head>
+    <body>
+        <div>
+            <div id="navbar">
+                <h1>Preguntas HTML + CSS</h1>
+            </div>
+            <div>
+                <h2>HTML</h2>
+                <h3>Introducción</h3>
+                <ol>
+                    <li>
+                        <b>¿Qué es HTML?</b> <br> <p>HTML es un lenguaje que se utiliza para crear páginas web, dandole estructura mediante etiquetas. </p>
+                    </li>
+                    <li>
+                        <b>Explica las etiquetas de head y body</b> <br> 
+                        <p> La etiqueta head contiene la información sobre la página que no se muestra en el contenido de ella, como pueden ser metadatos, o el titulo de la pagina que podemos ver en el navegador, o enlaces a archivos CSS, o scripts de JavaScript. <br> El body contiene el contenido principal de la página web, que incluyen encabezados o párrafos, imagenes, enlaces, listas o tablas, etcétera. </p>
+                    </li>
+                </ol>
+                <h3>Basic Tags</h3>
+                <ol>
+                    <li>
+                        <b>Explica las etiquetas section, article, aside, header, footer</b> <br>
+                        <p>La etiqueta section se usa para agrupar contenido en la página. Por ejemplo se puede usar para dividir la página por temas o categorias. <br> La etiqueta article se usa para seccionar contenido que puede existir por si solo. <br> La etiqueta aside se utiliza para contenido de la pagina que no es esencial, como por ejemplo alguna publicidad. <br> El header es la cabecera de una página, que usualmente incluye el logo, el menú de navegación y el título. <br> El footer representa el pie de página que usualmente contiene información de contacto y derechos de autor.  </p>
+                    </li>
+                    <li>
+                        <b>Crea una unordered list. Crea una lista ordenada</b> <br>
+                        <b>Unordered list</b>
+                        <ul>
+                            <li>Objeto 1</li>
+                            <li>Objeto 2</li>
+                            <li> Etc... </li>
+                        </ul>
+                        <b>Ordered List</b>
+                        <ol>
+                            <li>Objeto 1</li>
+                            <li>Objeto 2</li>
+                            <li>Etc...</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Crea una tabla básica usando html</b>
+                        <table>
+                            <caption>Ejemplo de tabla básica HTML</caption>
+                            <thead>
+                                <tr>
+                                    <th> Columna 1</th>
+                                    <th> Columna 2</th>
+                                    <th> Columna 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Columna 1, Fila 1 </td>
+                                    <td> Columna 2, Fila 1 </td>
+                                    <td> Columna 3, Fila 1 </td>
+                                </tr>
+                                <tr>
+                                    <td> Columna 1, Fila 2 </td>
+                                    <td> Columna 2, Fila 2 </td>
+                                    <td> Columna 3, Fila 2 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2>CSS</h2>
+                <h3>Introducción</h3>
+                <ol>
+                    <li>
+                        <b>¿Qué es CSS?</b> <br> <p>CSS es un lenguaje que se utiliza para dar un estilo o dar cierta apariencia a una página web. Nos permite personalizar más cada elemento de nuestras páginas. </p>
+                    </li>
+                    <li>
+                        <b>¿Cuál es el propósito de CSS?</b> <br> 
+                        <p> El propósito de CSS, como lo había mencionado antes, es podernos permitir personalizar cada elemento y etiqueta de nuestra página, y nos permite también que la página se adapte para distintos dispositivos.  </p>
+                    </li>
+                    <li>
+                        <b>¿Cómo aplicas CSS a un HTML?</b> <br> 
+                        <p> Para poder aplicar CSS a un documento HTML, hay 3 formas para hacerlo. </p>
+                        <ol>
+                            <li> Mediante un archivo de CSS externo, se crea un archivo css separado del archivo html y se enlaza en el head del archivo html usando link  </li>
+                            <li> Mediante la etiqueta style dentro del head, en el mismo archivo html en que se esta trabajando. </li>
+                            <li> Directamente en las etiquetas que se quieran modificar, mediante el atributo style, es util para ajustes rapidos  </li>
+                        </ol>
+                        <br>
+                    </li>
+                    <li>
+                        <b>¿Qué es un selector? ¿Qué es una regla de CSS?</b> <br> 
+                        <p> Un selector en CSS se usa para identificar uno o varios elementos de HTML y aplicarles estilos. Una regla de CSS es el conjunto de estilos que se asignan a los elementos seleccionados. Cada regla de CSS tiene dos partes principales, el selector que define a qué elementos de HTML se les aplicarán los estilos y las declaraciones que son las propiedades y valores que determinan cómo se verán esos elementos.</p>
+                    </li>
+                    <li>
+                        <b>Jugar los 32 niveles de <a href="https://flukeout.github.io/" target="_blank">https://flukeout.github.io/</a> </b> 
+                        <img src="./assets/flukeout.png" id="flukeout" alt="Flukeout image">
+                        <br> 
+                    </li>
+                    <li>
+                        <b>Jugar los 24 niveles de <a href="https://flexboxfroggy.com/" target="_blank">https://flexboxfroggy.com/</a> </b>
+                        <img src="./assets/flexboxFroggy.png" id="lvl24Flexbox" alt="Flexbox Froggy image">
+                    </li>
+                </ol>
+                <h3>CSS Básico</h3>
+                <ol>
+                    <li>
+                        <b>Explica las Tag Selector, Class Selector, Tag + Class Selector, Id Selector</b> <br>
+                        <ul>
+                            <li>Los Tag Selector aplican estilos a todos los elementos de una eiqueta HTML específica. </li>
+                            <li>Los Class Selector aplican estilos a cualquier elemento que tenga una clase especifica. </li>
+                            <li>El ID Selector aplican estilos a un único elemento con un ID especifico. </li>
+                            <li>Cuando se usa combinado el tag + class selector, especifica que solo las etiquetas que tengan una clase particular tendrán ese estilo. </li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li>
+                        <b>¿Qué es una clase? ¿Qué es un id? ¿Cómo estan relacionadas a CSS?</b> <br>
+                        <ul>
+                            <li>Una clase se utiliza para aplicar estilos a múltiples elementos. Un mismo nombre puede asignarse a diferentes etiquetas para así poder reutilizar estilos y evitar repetir codigo.</li>
+                            <li>Un ID es único en la página y solo puede asignarse a un elemento. </li>
+                            <li>Ambos estan relacionados ya que se usan para asignar estilos, pero la gran diferencia entre ellos es que una clase puede reutilizarse en múltiples elementos mientras que un ID se puede utilizar en un solo elemento. </li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li>
+                        <b>Explica el CSS Box Model, muestra un ejemplo</b>
+                        <p>El CSS Box Model es una representacion de la estructura de cada elemento CSS en una pagina. Se podria decir que cada elemento se representa y se comporta como una caja. Cada caja tiene un content, un padding, un border y un margin. </p>
+                    </li>
+                    <li>
+                        <b>¿Cómo puedes cambiar el color del font usando CSS?</b> 
+                        <p> Para cambiar el color del font, se puede usar la propiedad color, en esta propiedad se pueden usar colores que ya vienen predefinidos, codigos hexadecimales, RGB y HSL. </p>
+                        <br>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="contacto">
+            <h4> Paulina Méndez López </h4>
+            <p>A01644629</p>
+            <p>18 de febrero de 2025</p>
+        </div>
+    </footer>
+</html>

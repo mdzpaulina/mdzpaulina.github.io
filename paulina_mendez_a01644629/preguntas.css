@@ -1,0 +1,41 @@
+body {
+    font-family: 'Lato';
+    background-color: lightgray;
+    margin: 0;
+}
+
+table {
+    border: 0.5px solid black;
+    margin: 20px 0;
+    text-align: center;
+}
+
+th, td {
+    border: 0.5px solid black;
+    padding: 5px;
+}
+
+caption {
+    margin-bottom: 10px;
+}
+
+#lvl24Flexbox {
+    width: 70%;
+    height: 60%;
+}
+
+#flukeout {
+    width: 70%;
+    height: 60%;
+}
+
+#navbar {
+    background-color: brown;
+    padding: 5px;
+    border:none;
+}
+
+footer {
+    background-color: brown;
+    justify-content: center;
+}
