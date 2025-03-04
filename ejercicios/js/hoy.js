@@ -45,13 +45,15 @@ async function obtenerCancionesS(){
 
     let top = 0;
 
+    let trackContainer = document.createElement("div");
+    trackContainer.classList.add("grid-container");
+
     topTracks.forEach((trackName, index) => {
         top++;
-        let trackContainer = document.createElement("div");
-        trackContainer.classList.add("grid-container");
 
         let trackElement = document.createElement("h3");
         trackElement.textContent = `${top}. ${trackName}`;
+        trackElement.classList.add("track-item");
 
         let popularityElement = document.createElement("p");
         popularityElement.textContent = `Popularidad: ${topPopularity[index]}`;
@@ -63,6 +65,7 @@ async function obtenerCancionesS(){
         imageElement.style.height = "120px";
         imageElement.style.borderRadius = "4px";
         imageElement.style.marginRight = "15px";
+        
 
         trackContainer.appendChild(trackElement);
         trackContainer.appendChild(popularityElement);
