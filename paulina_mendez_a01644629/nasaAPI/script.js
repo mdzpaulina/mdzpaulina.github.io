@@ -12,6 +12,5 @@ async function obtenerCielo() {
     console.log(data);
     document.getElementById("resultado").innerHTML = 
         `<h2>${data.title} (${data.date})</h2>
-        <img src="${data.url}" alt="Imagen del espacio" width="600">
-        <p>${data.explanation}</p>`;
+        <img src="${data.url}" alt="Imagen del espacio" width="600">`;
 }
