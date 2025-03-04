@@ -48,6 +48,7 @@ async function obtenerCancionesS(){
     topTracks.forEach((trackName, index) => {
         top++;
         let trackContainer = document.createElement("div");
+        trackContainer.classList.add("grid-container");
 
         let trackElement = document.createElement("h3");
         trackElement.textContent = `${top}. ${trackName}`;
