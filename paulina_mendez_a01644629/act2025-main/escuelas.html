@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escuelas</title>
+</head>
+<body>
+    <h1>Lista de escuelas</h1>
+   <div id="listaEscuelas"></div>
+    <a href='/'>Bienvenida</a>
+    <a href='/donantes'>Donantes</a>
+
+    <script>
+        async function obtenerEscuelas() {
+          //Verifica si hay escuelas
+          try {
+            //Agregar el url adecuado
+            const listaEscuelas= await fetch("/api/escuelas");
+            const jsonLE=await listaEscuelas.json();
+            console.log(jsonLE);
+
+            if (!jsonLE.escuelas || jsonLE.escuelas.length === 0) {
+            document.getElementById("listaEscuelas").innerHTML = "<p>No hay escuelas disponibles.</p>";
+            return;
+            }
+            //Muestra las escuelas en el html
+            const listaHTML = jsonLE.escuelas.map(escuela => `
+                <div>
+                    <h2>${escuela.nombre}</h2>
+                    <p>${escuela.direccion}</p>
+                </div>
+                `).join("");
+                document.getElementById("listaEscuelas").innerHTML = listaHTML;
+          } catch (error) {
+            console.error("Error al obtener las escuelas:", error);
+            document.getElementById("listaEscuelas").innerHTML = "<p>Error al cargar los datos.</p>";
+          }
+        }
+        obtenerEscuelas();
+    </script>
+</body>
+</html>
